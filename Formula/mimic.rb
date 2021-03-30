@@ -23,10 +23,10 @@ class Mimic < Formula
   end
 
   def install
-    bin.install "program"
+    bin.install "mimic"
   end
 
   test do
-    system "#{bin}/program --version"
+    system "#{bin}/mimic --version"
   end
 end
