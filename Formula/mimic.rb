@@ -24,11 +24,9 @@ class Mimic < Formula
 
   def install
     bin.install "program"
-    ...
   end
 
   test do
     system "#{bin}/program --version"
-    ...
   end
 end
