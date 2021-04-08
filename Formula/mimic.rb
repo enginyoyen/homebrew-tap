@@ -5,29 +5,29 @@
 class Mimic < Formula
   desc "Mimic is standalone HTTP-based mock server."
   homepage "https://github.com/enginyoyen/mimic"
-  version "0.0.6"
+  version "0.1.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/enginyoyen/mimic/releases/download/0.0.6/mimic_0.0.6_Darwin_x86_64.tar.gz"
-    sha256 "d8f793d709c1617060280a7d5ec75a486559c3f28662e0fef29eefef8b5822bc"
+    url "https://github.com/enginyoyen/mimic/releases/download/0.1.0/mimic_0.1.0_Darwin_x86_64.tar.gz"
+    sha256 "28fe16de6a13a18a0cf28644023c5f6b7c0b161413ba441ce7c3938c01c8d268"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/enginyoyen/mimic/releases/download/0.0.6/mimic_0.0.6_Darwin_arm64.tar.gz"
-    sha256 "7f6e54589f19eec54edf863cd5b4e1dac34183a52c0e43c783aced797888ff74"
+    url "https://github.com/enginyoyen/mimic/releases/download/0.1.0/mimic_0.1.0_Darwin_arm64.tar.gz"
+    sha256 "4a1c1ff528d6efbd929ec67314b3409dbb077a98287d8a7108b0f56a5ef925f1"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/enginyoyen/mimic/releases/download/0.0.6/mimic_0.0.6_Linux_x86_64.tar.gz"
-    sha256 "df39e34730aabea754d4c25a42595a367221e97ad06eee8bbf3cfc2788b53250"
+    url "https://github.com/enginyoyen/mimic/releases/download/0.1.0/mimic_0.1.0_Linux_x86_64.tar.gz"
+    sha256 "90cce47d583c3b7d1b7e62b19abed47cabfb0abf27ecc8ee7a9517739a11ea87"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/enginyoyen/mimic/releases/download/0.0.6/mimic_0.0.6_Linux_arm64.tar.gz"
-    sha256 "9c18e4d466dfb142ebd721ad543d4d9687b9ee991c37e6ef90f581b48108f2fd"
+    url "https://github.com/enginyoyen/mimic/releases/download/0.1.0/mimic_0.1.0_Linux_arm64.tar.gz"
+    sha256 "bf4ca2990e9e60a8b47b054a223fc7bbf027372c2ee4f084a47b06610c6d945f"
   end
 
   def install
-    bin.install "program"
+    bin.install "mimic"
   end
 
   test do
